@@ -1,0 +1,20 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+<div class="container">
+  {% for cat in cats %}
+  <br>
+  <h2 class="center text-shadow"><strong>Name: </strong>{{cat.name}}</h2>
+  <br>
+  <img src='{{cat.image.url}}' alt="" width=40% height=40% class="image-center shadow">
+  <br>
+  <div class="card shadow text-center"  style="width: 35rem;">
+    <div class="card-body">
+      {{cat.description}}
+    </div>
+  </div>
+  <br>
+  {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
+{% load static %}
+
+<!-- Gallery -->
+<div class="container">
+
+  <div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="{% static 'portfolio/cat1.jpg'%}"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Blurry Marmie"
+      />
+
+      <img
+        src="{% static 'portfolio/cat2.jpg' %}"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt=""
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="{% static 'portfolio/cat3.jpg' %}"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt=""
+      />
+
+      <img
+        src="{% static 'portfolio/cat4.jpg' %}"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt=""
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="{% static 'portfolio/cat5.jpg' %}"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt=""
+      />
+
+      <img
+        src="{% static 'portfolio/cat6.jpg' %}"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt=""
+      />
+    </div>
+  </div>
+
+</div>
+<!-- Gallery -->
+
+{% endblock %}
