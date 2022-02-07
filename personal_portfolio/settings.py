@@ -134,7 +134,7 @@ MEDIA_URL ='/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# try:
-#     from .local_settings import *
-# except ImportError:
-#     print("Looks like no local file. You must be on production.")
+try:
+    from personal_portfolio.local_settings.py import *
+except ImportError:
+    print("Looks like no local file. You must be on production.")
